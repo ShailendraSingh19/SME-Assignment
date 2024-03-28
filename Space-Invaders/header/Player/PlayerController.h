@@ -5,6 +5,15 @@
 #include "../../header/Player/PlayerModel.h"
 #include "../../header/Player/PlayerView.h"
 
+
+// Forward declaration of PlayerView and PlayerModel classes
+//this is the bug that has to be fixed in the part 2
+namespace Player {
+    class PlayerView;
+    class PlayerModel;
+}
+
+
 namespace Player
 {
     class PlayerController : public Collision::ICollider
